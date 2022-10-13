@@ -61,7 +61,7 @@ const Login = () => {
         <TextInput placeholder='UserName' onChangeText={(value)=>setuserName(value)}></TextInput>
         </InputContainer>
         <InputContainer>
-        <TextInput placeholder='Password'  onChangeText={(value)=>setpassword(value)}></TextInput>
+        <TextInput placeholder='Password'  secureTextEntry onChangeText={(value)=>setpassword(value)}></TextInput>
         </InputContainer>
         <ButtonContainer>
         <Button  mode="contained" onPress={CheckPassword}>Login</Button>
