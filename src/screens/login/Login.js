@@ -58,10 +58,10 @@ const Login = () => {
         <LoginText>Login</LoginText>
         {LoginError && <ErrorContainer><Text>Invalid Credentials</Text><Text onPress={CloseErrorBox}>X</Text></ErrorContainer>}
         <InputContainer>
-        <TextInput placeholder='UserName' onChangeText={(value)=>setuserName(value)}></TextInput>
+        <TextInput placeholder='Enter User Name'  label="User Name" mode="outlined" onChangeText={(value)=>setuserName(value)}></TextInput>
         </InputContainer>
         <InputContainer>
-        <TextInput placeholder='Password'  secureTextEntry onChangeText={(value)=>setpassword(value)}></TextInput>
+        <TextInput placeholder='Enter your Password'  label="Password" mode="outlined" secureTextEntry onChangeText={(value)=>setpassword(value)}></TextInput>
         </InputContainer>
         <ButtonContainer>
         <Button  mode="contained" onPress={CheckPassword}>Login</Button>
